@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js">
+    </script>
+   
+    
+    <script
+    src= " https://cdn.jsdelivr.net/gh/n5ro/aframe-physicssystem@v4.0.1/dist/aframe-physics-system.min.js"></script>
+   
+    
+    <script
+    src= " https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+   
+    
+    <script
+    src= " https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
+    <script src="shoot.js"></script>
+
+    <script
+    src="aframe-inspector-plugin-recast"></script>
+</head>
+<body>
+    <a-scene id="scene" inspector-plugin-recast>
+        <a-entity id="environment"  environment="preset: egypt; skyType:gradient; lighting:point"></a-entity>
+        <a-entity id="navigation-mesh" gltf-model="#collider" visible="false" nav-mesh>
+        </a-entity>
+    </a-scene>
+</body>
+</html>
